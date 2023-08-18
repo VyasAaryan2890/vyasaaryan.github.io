@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.mobile li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+.mobile li a:hover,
+.mobile li a.active{
+    color: #088178;
+}
+.mobile li a.active::after,
+.mobile li a:hover::after{
+    content: '';
+    width: 30%;
+    background-color: #088178;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+.mobile li{
+    list-style:none;    
+    padding: 0 20px;
+    position: relative;
+}
+ #so{
+    color: black;
+    font-size: 20px;
+    padding: 41px 10px;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+#navbar{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-left:30%;
+}
+#navbar li{
+    list-style:none;    
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: #088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: '';
+    width: 30%;
+    background-color: #088178;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+
+}
+#hero{
+    background-image:url(img/hero4.png);
+    height: 90vh;
+    width: 87.5%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+h4{
+    font-size: 20px;
+}
+h2{
+    font-size: 50px;
+}
+h1{
+    font-size: 50px;
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    color: #088178;
+    margin-left: -2%;
+}
+#hero button{
+    background-image: url(img/button.png);
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+#feature .fe-box{
+    width: 150px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+}
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#feature .fe-box h6{
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+    display: inline-block;
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box:nth-child(2) h6{
+    background-color: #cdebbc;
+}
+#feature .fe-box:nth-child(3) h6{
+    background-color: #d1e8f2;
+}
+#feature .fe-box:nth-child(4) h6{
+    background-color: #cdd4f8;
+}
+#feature .fe-box:nth-child(5) h6{
+    background-color: #f6dbf6;
+}
+#feature .fe-box:nth-child(6) h6{
+    background-color: #fff2e5;
+}
+#product1 .pro-con{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+#product1{
+    text-align: center;
+}
+.mobile li a {
+    font-size: 21px;
+
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 8px 2px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgb(0,0,0,0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgb(0,0,0,0.06);
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 12px;
+}
+#product1 .pro .des h5{
+    padding-top:7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+#product1 .pro .des i{
+    font-size: 10px;
+    color: rgb(243,181,25);
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+#product1 .pro .cart{
+    width: 30px;
+    height: 50px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+   
+    
+
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("img/banner/b2.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+    color: #fff;
+    font-size: 16px;
+}
+#banner h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color: #ef3636;
+}
+button {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+#banner button:hover{
+    background: #088178;
+    color: #fff;
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url("img/banner/b17.jpg");
+    min-width: 500px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner h4{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 300;
+}
+#sm-banner h2{
+    color:#fff;
+    font-size: 28px;
+    font-weight: 800;
+}
+#sm-banner span{
+    color:#fff;
+    font-size: 14px;
+    font-weight:500;
+    padding-bottom: 15px;
+}
+#sm-banner .banner-box2{
+    background-image: url("img/banner/b10.jpg");
+}
+#banner3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url("img/banner/b7.jpg");
+    min-width: 30%px;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin: 20px;
+}
+#banner3 h2{
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+}
+#banner3 h3{
+    color: #ec544e;
+    font-weight: 800;
+    font-size: 15px;
+}
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image:url("img/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+}
+#newsletter p span{
+    color: #ffbd27;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding:  0 1.25rem;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter button{
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+.follow{
+    margin-top: 2%;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .install .row img{
+    border:1px solid #088178;
+    border-radius: 6px;
+}
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+footer .follow i:hover,
+footer a:hover{
+    color: #088178;
+}
+footer .copyright{
+    width: 100%;
+    text-align: center;
+    color: #999;
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close i{
+    display: none;
+}
+@media(max-width:799px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: px;
+        height: 100vh;
+        width: 180px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.9s;
+    }
+    #close i{
+        display: flex;
+        font-size: 20px;
+        transition:0.9s;
+    }
+	#close{
+	position:absolute;
+	top:30px;
+	left:30px;
+	color:#222;
+	font-size:24px;
+	}
+    #navbar .active{
+        right:0px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+    #sm-banner .banner-box {
+    height: 30vh;
+    padding: 30px;
+    margin-top: 5%;
+    border-radius: 15px;
+}
+#banner {
+   
+    width: 100%;
+    height: 20vh;
+}
+#newsletter input {
+    height: 4.125rem;
+    padding: 0 1.25rem;
+    width: 300px;
+    
+}
+}
+	.header{
+		display:flex;
+		justify-content: space-between;
+    background-color: black;
+    padding: 5px 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    align-items: center;
+    background-color: #e3e6f3;
+	}
+  .hamburger{
+    display: none;
+  }
+  .mobile{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px
+  }
+  .mobile li{
+    display: flex;
+    padding: 0 15px;
+    font-size: 20px;
+    margin: 8% auto;
+  }
+  h1{
+    padding: 20px;
+    color: #fff;
+  }
+  .mobile li a{
+    text-decoration: none;
+    color:black;
+    font-size: 25px;
+    margin-top: -5%;
+    
+  }
+  #close{
+    display: none;
+  }
+  @media (max-width:799px)
+{
+    .nav .mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -353px;
+    height: 100vh;
+    width: 250px;
+    background-color: #e3e6f3;
+    box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+    padding: 80px 0 0 10px;
+    color: black;
+    transition: 0.5s
+
+}
+#so{
+    font-size: 25px;
+    padding: 0px 20px;
+    margin-top: -1%;
+}
+#hero {
+    background-image: url(img/hero4.png);
+    height: 67vh;
+    width: 79%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#bar{
+    margin-top: 1%;
+}
+.hamburger{
+  display: flex;
+  padding:25px;
+  font-size:25px;
+}
+.nav .mobile.active{
+    right: 0px;
+    background-color: #e3e6f3;
+}
+#close{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #222;
+  font-size: 24px;
+  display: flex;
+}
+.mobile li a{
+  margin-right: 250px;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.mobile li a:hover{
+  color: cadetblue;
+  cursor: pointer;
+}
+.header{
+  margin-top: -3%;
+}
+.nav .mobile li a{
+margin-bottom:20px;
+color:black;
+margin-top: -5%;
+font-size: 18px;
+
+}
+h2 {
+    font-size: 28px;
+}
+#hero h1 {
+    color: #088178;
+    margin-left: -3%;
+    font-size: 24px;
+}
+#hero button {
+    background-image: url(img/button.png);
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: -8%;
+}
+}
+@media (max-width:477px)
+{
+			 .header {
+			padding: 10px 30px;
+			position: sticky;
+			top: 0;
+			left: 0;
+			margin-top:0px;
+			height:49px;
+            width: 86.2%;
+		}
+        #hero h1 {
+    color: #088178;
+    margin-left: -23%;
+}
+
+		#hero {
+			background-image: url(img/hero4.png);
+			height: 33vh;
+			width: 61.3%;
+			background-size:cover;
+		}
+		#hero h4 {
+			padding-bottom: 1px;
+			font-size: 13px;
+			margin-left:-15%;
+		}
+		h2 {
+			font-size: 13px;
+			margin-left: -15%;
+			
+		}
+		h1 {
+			font-size: 15px;
+			margin-left: -23%;
+            margin-top: -5%;
+		}
+		#hero button {
+			
+			padding: 14px 80px 14px 60px;
+			background-repeat: no-repeat;
+			cursor: pointer;
+			font-weight: 700;
+			font-size: 15px;
+			margin-left: -33%;
+		}
+		#feature {
+			padding: 10px 38px;
+		}
+		#feature .fe-box {
+			width: 125px;
+			text-align: center;
+			padding: px 45px;
+			box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+			border: 1px solid #cce7d0;
+			border-radius: 4px;
+			margin: 15px 0;
+		}
+		#feature {
+			justify-content: space-between;
+		}
+		#product1 .pro-con {
+			display:flex;
+			padding: 24px 21px;
+			flex-wrap:wrap;
+			
+			justify-content:space-between;
+		}
+		#banner {
+			width: 100%;
+			height:24vh;
+
+		}
+		#sm-banner {
+	width: 280px;
+	padding:0px 10px;	
+	margin-left:13%;
+}
+	button {
+		font-size: 14px;
+		font-weight: 600;
+		padding: 18px 30px;
+
+	}
+	#banner h2 {
+		color: #fff;
+		font-size: 16px;
+		padding: 10px;
+		margin-left: 2%;
+	}
+	#sm-banner .banner-box {
+		
+		min-width:10px;
+		height: 28vh;
+        border-radius: 15px;
+	
+	}
+	#navbar li{
+		position: relative;
+	}
+	#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+.section-p1 {
+    padding: 30px 30px;
+}
+.font{
+    margin-left: -15%;
+}
+#product1 .pro {
+    width: 30%;
+    min-width: 140px;
+    padding: 2px 2px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgb(0,0,0,0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+.fe{
+    margin-left: 1%;
+    font-size: 25px;
+}
+.a{
+    margin-left: 2%;
+    font-size: 25px;
+}
+
+    .nav .mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -353px;
+    height: 100vh;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+    padding: 80px 0 0 10px;
+    color: black;
+    transition: 0.5s
+
+}
+.nav .mobile li a{
+margin-bottom:20px;
+color:black;
+
+}
+.header{
+  margin-top: -5%;
+}
+#bar{
+    color:#000;
+    margin-top: 1%;
+}
+#so{
+    color: black;
+    padding: 0px 14px;
+}
+.mobile li a.active::after, .mobile li a:hover::after {
+    content: '';
+    width: 9%;
+    background-color: #088178;
+    height: 2px;
+    position: absolute;
+    bottom: 8px;
+    left: 20px;
+}
+}
+
+
+
+
+</style>
+<body>
+
+    <div class="header">
+        <img src="img/logo.png" alt="">
+        <div class="nav">
+          <ul class="mobile"> <!-- Assign the class "mobile" to the <ul> element containing the navigation list items -->
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <a href="cart.html"><i class="far fa-shopping-bag" id="so"></i></a>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+          </ul>
+        </div>
+        <div class="hamburger"> <!-- Add the class "hamburger" to the hamburger icon -->
+            <a href="cart.html"><i class="far fa-shopping-bag" id="so"></i></a>
+          <i id="bar" class="fas fa-outdent"></i>
+        </div>
+      </div>
+
+    <section id="hero">
+        <h4>Trade-in-offer</h4>
+        <h2 class="font">Super value deals</h2>
+        <h1>On all products</h1>
+        <button>Shop Now</button>
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="img/features/f1.png">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f2.png">
+            <h6>Online Order</h6>
+        </div><div class="fe-box">
+            <img src="img/features/f3.png">
+            <h6>Save Moneny</h6>
+        </div><div class="fe-box">
+            <img src="img/features/f4.png">
+            <h6>Promotions</h6>
+        </div><div class="fe-box">
+            <img src="img/features/f6.png">
+            <h6>24/7 Support</h6>
+        </div><div class="fe-box">
+            <img src="img/features/f5.png">
+            <h6>Happy</h6>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2 class="fe">Featured Products</h2>
+        <p>Summer Collection New Morden Design</p>
+        <div class="pro-con">
+            <div class="pro">
+                <img src="img/products/f1.jpg">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon  Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f2.jpg">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon  Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f3.jpg">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon  Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f4.jpg">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon  Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f5.jpg">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon  Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f6.jpg">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon  Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+             <div class="pro">
+                <img src="img/products/f7.jpg">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon  Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>    
+             <div class="pro">
+                <img src="img/products/f8.jpg">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon  Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>    
+        </div>
+    </section>
+
+    <section id="banner" class="section-m1">
+        <h4>Repair Services</h4>
+        <h2>Up to <span>70% Off</span> - All-t-Shirts &nAccessories</h2>
+        <button class="nor">Exploer More</button>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2 class="a">New Arrivals</h2>
+        <p>Summer Collection New Morden Design</p>
+        <div class="pro-con">
+            <div class="pro">
+                <img src="img/products/n1.jpg">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon  Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n2.jpg">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon  Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n3.jpg">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon  Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n4.jpg">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon  Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n5.jpg">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon  Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/n6.jpg">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon  Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>  
+             <div class="pro">
+                <img src="img/products/n7.jpg">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon  Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+             <div class="pro">
+                <img src="img/products/n8.jpg">
+                <div class="des">
+                    <span>Adidas</span>
+                    <h5>Cartoon  Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>  
+        </div>
+    </section>
+
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4>Carzy deals</h4>
+            <h2>Buy 1 Get 1 free</h2>
+            <span>The best classic dress is on sale at cara</span>
+            <button>Learn More</button>
+        </div>
+
+        <div class="banner-box banner-box2">
+            <h4>Spring Summer</h4>
+            <h2>Upcoming Season</h2>
+            <span>The best classic dress is on sale at cara</span>
+            <button>Collection</button>
+        </div>
+    </section>
+
+   <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button>Sign Up</button>
+        </div>
+   </section>
+
+   <footer class="section-p1">
+        <div class="col">
+            <img src="img/logo.png">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>562 Wellington Road , Street 32, San Fancisco</strong></p>
+            <p><strong>Phone: </strong>91+ 9409251162</p>
+            <p><strong>Hours: </strong>10:00 am - 9:00 pm , Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-pinterrest"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Infromation</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App </h4>
+            <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="img/pay/app.jpg">
+                    <img src="img/pay/play.jpg">
+                </div>
+                <p>Secure Payment Getways</p>
+                <img src="img/pay/pay.png">
+        </div>
+
+        <div class="copyright">
+            <p>@2023, Vyas Aaryan</p>
+        </div>
+   </footer>
+
+<script>
+     const mobileNav = document.querySelector('.mobile');
+    const hamburger = document.getElementById('bar');
+    const closeIcon = document.getElementById('close');
+    
+    hamburger.addEventListener('click', () => {
+      mobileNav.classList.toggle('active');
+    });
+
+    closeIcon.addEventListener('click', () => {
+      mobileNav.classList.remove('active');
+    });
+</script>
+</body>
+</html>
